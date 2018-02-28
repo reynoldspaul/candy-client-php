@@ -17,7 +17,7 @@ class Current extends AbstractJob
             $action .= '/' . $this->params;
         }
 
-        $this->addRequest('users-curren', new Request($action, 'GET', $this->params));
+        $this->addRequest('users-current', new Request($action, 'GET', $this->params));
     }
 
 }

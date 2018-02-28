@@ -15,7 +15,11 @@
     "extra": {
         "laravel": {
             "providers": [
-            ]
+                "GetCandy\\Client\\GetCandyServiceProvider"
+            ],
+            "aliases": {
+                "GetCandyClient" : "GetCandy\\Client\\Facades\\GetCandy"
+            }
         }
     }
 }

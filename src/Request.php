@@ -15,9 +15,9 @@ class Request
     {
 
         if (parse_url($endPoint, PHP_URL_QUERY)) {
-            $endPoint .= '&channel='. env('APP_CHANNEL', 'aqua-spa-supplies');
+            $endPoint .= '&channel='. env('APP_CHANNEL', 'get-candy');
         }else{
-            $endPoint .= '?channel='. env('APP_CHANNEL', 'aqua-spa-supplies');
+            $endPoint .= '?channel='. env('APP_CHANNEL', 'get-candy');
         }
 
         $this->endPoint = $endPoint;

@@ -73,7 +73,7 @@ class Candy
 
     public function batch(Closure $addJobs)
     {
-        $batch = new \GetCandy\LaravelClient\BatchRequestService();
+        $batch = new \GetCandy\Client\BatchRequestService();
 
         $addJobs($batch);
 
@@ -97,6 +97,6 @@ class Candy
 
     private function getClassFromChain()
     {
-        return "\\GetCandy\\LaravelClient\\Jobs\\" . implode("\\", array_map("ucfirst", $this->callChain));
+        return "\\GetCandy\\Client\\Jobs\\" . implode("\\", array_map("ucfirst", $this->callChain));
     }
 }
